@@ -12,3 +12,9 @@ function addTwoNumbers(a, b) {
 
 addTwoNumbers(2, 3);
 
+// subtract 2 numbers
+function subtractTwoNumbers(a, b) {
+  console.log(a - b);
+}
+
+subtractTwoNumbers(2, 3);
