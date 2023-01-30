@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* New */
+  background-color: rgb(253, 196, 206);
+  font-family: sans-serif;
+}
+form {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+input {
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid pink;
+}
+
+button {
+  color: white;
+  background-color: palevioletred;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+@keyframes ballAnimation {
+  0% {
+    bottom: 0%;
+    left: 0%;
+  }
+  20% {
+    bottom: 100%;
+    left: 20%;
+    /* Random bacground color not white*/
+    background-color: rgb(253, 196, 206);
+    /* Change shape to triangle or sphere */
+  }
+  40% {
+    bottom: 0%;
+    left: 40%;
+    background-color: rgb(123, 196, 206);
+  }
+  60% {
+    bottom: 100%;
+    left: 60%;
+    background-color: purple;
+  }
+  80% {
+    bottom: 0%;
+    left: 80%;
+    background-color: green;
+  }
+  100% {
+    bottom: 100%;
+    left: 100%;
+    background-color: yellow;
+  }
+}
+
+.ball {
+  background-color: red;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  animation-name: ballAnimation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}

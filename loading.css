@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* New */
+  background-color: rgb(253, 196, 206);
+  font-family: sans-serif;
+}
+.loading-container {
+  width: 40%;
+  height: 15px;
+  background-color: #ddd;
+  position: relative;
+  border-radius: 5px;
+}
+
+.loading-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: loading 10s linear infinite;
+  border-radius: 5px;
+  /* Box shadow */
+  box-shadow: 0 0 10px #333;
+}
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
