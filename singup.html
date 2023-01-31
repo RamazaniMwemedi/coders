@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Create A New Account</title>
-    <link rel="stylesheet" href="./singup.css" />
-  </head>
-  <body>
-    <form>
-      <h5>Create a New Account</h5>
-      <!-- Usernamer -->
-      <label for="username">
-        <input type="text" placeholder="Username" />
-      </label>
-      <br />
-      <!-- First Name -->
-      <label for="firstname">
-        <input type="text" placeholder="First Name" />
-      </label>
-      <!-- Last Name -->
-      <label for="lastname">
-        <input type="text" placeholder="Last Name" />
-      </label>
-      <br />
-      <!-- Password -->
-      <label for="password">
-        <input type="password" placeholder="Password" />
-      </label>
-      <label for="confirm_password">
-        <input type="password" placeholder="Confirm Password" />
-      </label>
-      <br />
-      <label for="email">
-        <input type="email" placeholder="Email Address" />
-      </label>
-      <br />
-      <br />
-      <button type="submit">Create Account</button>
-    </form>
-  </body>
-  <div class="ball"></div>
-  <script src="./singup.js"></script>
+
+<head>
+  <title>Create A New Account</title>
+  <link rel="stylesheet" href="./singup.css" />
+</head>
+
+<body>
+  <form>
+    <h5>Create a New Account</h5>
+    <!-- Usernamer -->
+    <label for="username">
+      <input type="text" placeholder="Username" onchange="onUserNameChangeHandler(this)" />
+    </label>
+    <br />
+    <!-- First Name -->
+    <label for="firstname">
+      <input type="text" placeholder="First Name" />
+    </label>
+    <!-- Last Name -->
+    <label for="lastname">
+      <input type="text" placeholder="Last Name" />
+    </label>
+    <br />
+    <!-- Password -->
+    <label for="password">
+      <input type="password" placeholder="Password" />
+    </label>
+    <label for="confirm_password">
+      <input type="password" placeholder="Confirm Password" />
+    </label>
+    <br />
+    <label for="email">
+      <input type="email" placeholder="Email Address" />
+    </label>
+    <br />
+    <br />
+    <button type="button">Create Account</button>
+  </form>
+</body>
+<div class="ball"></div>
+<script src="./singup.js"></script>
+
 </html>
