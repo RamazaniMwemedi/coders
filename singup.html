@@ -7,36 +7,36 @@
 </head>
 
 <body>
-  <form>
+  <form onsubmit="return handleSubmit(event)">
     <h5>Create a New Account</h5>
     <!-- Usernamer -->
     <label for="username">
-      <input type="text" placeholder="Username" onchange="onUserNameChangeHandler(this)" />
+      <input type="text" placeholder="Username" onchange="handleUsernameChange(this)" />
     </label>
     <br />
     <!-- First Name -->
     <label for="firstname">
-      <input type="text" placeholder="First Name" />
+      <input type="text" placeholder="First Name" onchange="handleFirstnameChange(this)" />
     </label>
     <!-- Last Name -->
     <label for="lastname">
-      <input type="text" placeholder="Last Name" />
+      <input type="text" placeholder="Last Name" onchange="handleLastnameChange(this)" />
     </label>
     <br />
     <!-- Password -->
     <label for="password">
-      <input type="password" placeholder="Password" />
+      <input type="password" placeholder="Password" onchange="handlePasswordChange(this)" />
     </label>
     <label for="confirm_password">
-      <input type="password" placeholder="Confirm Password" />
+      <input type="password" placeholder="Confirm Password" onchange="handleConfirmPasswordChange(this)" />
     </label>
     <br />
     <label for="email">
-      <input type="email" placeholder="Email Address" />
+      <input type="email" placeholder="Email Address" onchange="handleEmailChange(this)" />
     </label>
     <br />
     <br />
-    <button type="button">Create Account</button>
+    <button type="submit">Create Account</button>
   </form>
 </body>
 <div class="ball"></div>
